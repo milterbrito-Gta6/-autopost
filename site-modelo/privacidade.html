@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade — AutoPost</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="logo" href="./">Auto<span>Post</span></a>
+  <nav><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></nav></header>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="muted">Última atualização: 17 de novembro de 2026</p>
+
+  <div class="box">Resumo: o AutoPost roda no computador do próprio criador e só usa as contas dele. Ele só envia vídeos e textos
+    que o próprio criador colocou na fila. Os dados ficam no computador do criador e não são vendidos nem compartilhados,
+    exceto com as redes onde o vídeo é publicado e, se o criador ativar, com o provedor de IA que sugere legendas.</div>
+
+  <h2>1. Quem somos</h2>
+  <p>O AutoPost é uma ferramenta pessoal e auto-hospedada: cada criador instala e roda no próprio computador. Não existe servidor
+    central do AutoPost que receba os seus dados. Contato: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a>.</p>
+
+  <h2>2. Dados que acessamos</h2>
+  <table>
+    <tr><th>Rede</th><th>Permissões</th><th>Para quê</th></tr>
+    <tr><td>YouTube (API do YouTube / Google)</td><td><code>youtube.upload</code>, <code>youtube.readonly</code></td>
+      <td>Enviar os vídeos da fila para o seu canal; ler o nome do canal e o número de visualizações, curtidas e comentários dos vídeos enviados pelo AutoPost.</td></tr>
+    <tr><td>TikTok</td><td><code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>, <code>video.list</code></td>
+      <td>Mostrar o nome do seu perfil; enviar/publicar os vídeos da fila; ler as estatísticas dos vídeos publicados.</td></tr>
+    <tr><td>Instagram / Facebook (Meta)</td><td><code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>instagram_manage_insights</code>, <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>business_management</code></td>
+      <td>Encontrar a sua conta profissional do Instagram ligada à sua Página; publicar Reels; ler visualizações e curtidas dos Reels publicados.</td></tr>
+  </table>
+  <p>O AutoPost <b>não</b> lê mensagens, lista de seguidores, dados de outras pessoas nem conteúdo que não tenha sido enviado por ele.</p>
+
+  <h2>3. Onde os dados ficam</h2>
+  <p>Os tokens de acesso, os vídeos da fila, os textos e as estatísticas ficam em um banco de dados local, no computador do criador
+    (pasta <code>data/</code> do AutoPost). Nada disso é enviado a servidores do AutoPost, porque eles não existem.</p>
+
+  <h2>4. Com quem compartilhamos</h2>
+  <ul>
+    <li><b>As próprias redes</b> (YouTube, TikTok, Instagram): recebem o vídeo e o texto que você mandou publicar.</li>
+    <li><b>Provedor de IA (Anthropic)</b>, só se você ativar e configurar a sua própria chave: recebe alguns quadros do vídeo, a
+      transcrição da fala, as suas instruções de estilo e, para melhorar as sugestões, os textos e o número de visualizações dos seus
+      posts de melhor desempenho. Ele devolve sugestões de título, descrição e hashtags. Isso pode ser desligado nas Configurações.</li>
+    <li>Não vendemos dados, não usamos para publicidade e não compartilhamos com mais ninguém.</li>
+  </ul>
+
+  <h2>5. Serviços do Google e do YouTube</h2>
+  <p>O AutoPost usa os Serviços de API do YouTube. Ao conectar o YouTube, você concorda com os
+    <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Termos de Serviço do YouTube</a>, e os seus dados também
+    são tratados conforme a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.
+    O uso de dados recebidos das APIs do Google segue a
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>,
+    incluindo os requisitos de Uso Limitado.</p>
+
+  <h2>6. Cookies</h2>
+  <p>O AutoPost não usa cookies de rastreamento nem ferramentas de análise. O painel local não coloca cookies de terceiros no seu navegador.</p>
+
+  <h2 id="exclusao">7. Como revogar o acesso e apagar os dados</h2>
+  <ul>
+    <li>No painel do AutoPost: <b>Contas → Desconectar</b> apaga o token daquela rede. Para apagar tudo, exclua a pasta <code>data/</code> do AutoPost.</li>
+    <li>Google/YouTube: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    <li>TikTok: app do TikTok → Configurações e privacidade → Segurança → Apps e serviços com permissão.</li>
+    <li>Meta: Facebook → Configurações → Apps e sites (e Instagram → Configurações → Apps e sites).</li>
+  </ul>
+  <p>Os dados obtidos das APIs são guardados só enquanto a conta estiver conectada e são apagados quando você desconecta ou exclui a pasta de dados.</p>
+
+  <h2>8. Mudanças</h2>
+  <p>Se esta política mudar, a data no topo será atualizada.</p>
+
+  <hr>
+  <section id="en" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p class="muted">Last updated: November 17, 2026</p>
+    <p><b>AutoPost</b> is a personal, self-hosted tool. Each creator runs it on their own computer and connects only their own accounts.
+      There is no central AutoPost server.</p>
+    <h3>Data accessed</h3>
+    <ul>
+      <li><b>YouTube</b> (<code>youtube.upload</code>, <code>youtube.readonly</code>): upload queued videos to the user's channel; read the channel name and the view/like/comment counts of videos uploaded by AutoPost.</li>
+      <li><b>TikTok</b> (<code>user.info.basic</code>, <code>video.upload</code>, <code>video.publish</code>, <code>video.list</code>): show the profile name; upload/publish queued videos; read stats of published videos.</li>
+      <li><b>Instagram/Meta</b> (<code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>instagram_manage_insights</code>, <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>business_management</code>): find the user's professional Instagram account linked to their Page; publish Reels; read stats of published Reels.</li>
+    </ul>
+    <p>AutoPost does not read messages, followers, other people's data, or content it did not upload.</p>
+    <h3>Storage and sharing</h3>
+    <p>Access tokens, queued videos, captions and stats are stored only in a local database on the user's computer. Data is shared
+      only with (a) the platforms where the user chooses to publish, and (b) if the user enables it with their own API key, the AI provider
+      (Anthropic), which receives a few video frames, the speech transcript, the user's style notes and, to improve suggestions, the
+      captions and view counts of the user's best-performing posts, and returns caption suggestions. AutoPost does not sell data,
+      use it for advertising, or share it with anyone else.</p>
+    <h3>YouTube API Services</h3>
+    <p>AutoPost uses YouTube API Services. By connecting YouTube you agree to the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and your data is also subject to the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. AutoPost's use of information received from Google APIs
+      adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+    <h3>Cookies</h3>
+    <p>No tracking cookies or analytics are used.</p>
+    <h3>Revoking access and deleting data</h3>
+    <p>Use <b>Accounts → Disconnect</b> in AutoPost or delete its <code>data/</code> folder. You can also revoke access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google), in TikTok under
+      Settings → Security → Apps and services, and in Facebook/Instagram under Settings → Apps and websites. API data is kept only while
+      the account is connected and is deleted on disconnect.</p>
+    <h3>Contact</h3>
+    <p><a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
+  </section>
+</main>
+<footer>AutoPost · <a href="./">início</a> · <a href="termos.html">termos</a></footer>
+</body>
+</html>
